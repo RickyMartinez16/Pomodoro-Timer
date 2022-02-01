@@ -77,10 +77,10 @@ function Pomodoro() {
   
   if(session.label === "Focusing"){
     setProgressBarCalc(((focusDuration*60) - session.timeRemaining) / (focusDuration*60) * 100);
-    //console.log(progressBarCalc);
+    
   } else{
     setProgressBarCalc(((breakDuration*60) - session.timeRemaining) / (breakDuration*60) * 100);
-    //console.log(progressBarCalc);
+    
   }
 },
   isTimerRunning ? 1000 : null
