@@ -5,6 +5,7 @@ import FocusTimer from "../FocusTimer";
 import BreakTimer from "../BreakTimer";
 import PlayStopButton from "../PlayStopButton";
 import TimerBar from "../TimerBar";
+import StopButton from "../StopButton";
 
 // These functions are defined outside of the component to ensure they do not have access to state
 // and are, therefore, more likely to be pure.
@@ -169,6 +170,9 @@ function Pomodoro() {
             isTimerRunning={isTimerRunning}
             handleStopButton={handleStopButton}
           />
+          <StopButton
+            isTimerRunning={isTimerRunning}
+            handleStopButton={handleStopButton} />
         </div>
       </div>
       <TimerBar 
